@@ -8,6 +8,7 @@ import deleteTask from "./commands/delete";
 
 const command = process.argv[2]
 const description = process.argv[3]
+const status = process.argv[3]
 
 console.log(process.argv);
 
@@ -16,15 +17,19 @@ switch (command) {
     case "add":
         addTask(description);
         break;
+
     case "list":
-        listTask();
+        listTask(status);
         break;
+
     case "update":
         updateTask();
         break;
+
     case "delete":
         deleteTask();
         break;
+
     default:
         console.log("No such command");
         break;
