@@ -1,5 +1,3 @@
-import { read, stat } from "fs";
-import { Task } from "../types/task";
 import { readTasks } from "../utils/fileManager";
 
 export default function listTasks(status?: string): void {
