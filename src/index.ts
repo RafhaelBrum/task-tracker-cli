@@ -7,25 +7,14 @@ import updateTask from "./commands/update";
 import deleteTask from "./commands/delete";
 
 const command = process.argv[2]
+const description = process.argv[3]
 
 console.log(process.argv);
-
-// try {
-//     const jsonTasks = fs.readFileSync('tasks.json', 'utf-8');
-//     const data = JSON.parse(jsonTasks);
-//     console.log(data);
-
-// } catch (e) {
-//     console.log("JSON file does not exists. Creating JSON file...");
-//     writeFileSync('tasks.json', '');
-//     console.log('JSON File created.');
-// }
-
 
 
 switch (command) {
     case "add":
-        addTask();
+        addTask(description);
         break;
     case "list":
         listTask();
