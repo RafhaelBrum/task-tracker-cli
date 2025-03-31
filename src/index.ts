@@ -1,3 +1,6 @@
+#!/usr/bin/env node
+
+
 import addTask from "./commands/add";
 import listTask from "./commands/list";
 import updateTask from "./commands/update";
