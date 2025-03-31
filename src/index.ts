@@ -7,36 +7,35 @@ import markInProgress from "./commands/mark-in-progress";
 
 
 const command = process.argv[2]
-const description = process.argv[3]
-const status = process.argv[3]
-const id = process.argv[3]
+const param1 = process.argv[3]
+const param2 = process.argv[4]
 
 console.log(process.argv);
 
 
 switch (command) {
     case "add":
-        addTask(description);
+        addTask(param1); // id
         break;
 
     case "list":
-        listTask(status);
+        listTask(param1); // status
         break;
 
     case "update":
-        updateTask();
+        updateTask(param1, param2); // id, desc
         break;
 
     case "delete":
-        deleteTask();
+        deleteTask(param1); //id
         break;
 
     case "mark-done":
-        markDone(id);
+        markDone(param1); // id
         break;
 
     case "mark-in-progress":
-        markInProgress(id);
+        markInProgress(param1); // id
         break;
 
     default:
