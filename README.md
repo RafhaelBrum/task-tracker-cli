@@ -1,6 +1,6 @@
 # Task Tracker CLI
 
-<roadmap.sh> backend project - https://roadmap.sh/projects/task-tracker
+**roadmap.sh** backend project - https://roadmap.sh/projects/task-tracker
 
 A simple command-line interface (CLI) application to manage your daily tasks.
 Add, list, update, delete, and mark tasks as done or in progress — all from the terminal.
@@ -46,7 +46,7 @@ npx tsc
 ### 4. Run commands using `npx`
 
 ```bash
-npx task-cli < command >
+npx task-cli <command>
 ```
 
 ---
